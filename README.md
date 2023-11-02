@@ -1,23 +1,156 @@
 - [My Projects](#my-projects)
-  - [Own repositories](#own-repositories)
-    - [1. BinLTools](#1-binltools)
-    - [2. CPU Organization and Design](#2-cpu-organization-and-design)
-    - [3. Thread scheduler](#3-thread-scheduler)
-    - [4. One Death Clear](#4-one-death-clear)
-  - [Open Source projects contributions](#open-source-projects-contributions)
-    - [1. Kueue](#1-kueue)
+    - [Campus](#campus)
+    - [CPU Organization and Design](#cpu-organization-and-design)
+    - [Cage](#cage)
+    - [Thread scheduler](#thread-scheduler)
+    - [Pentominoes](#pentominoes)
+    - [Pokedex](#pokedex)
+    - [BinLTools](#binltools)
+    - [LionSpell](#lionspell)
+    - [Kueue](#kueue)
+    - [Course Scheduler](#course-scheduler)
+    - [Drawing Application](#drawing-application)
+    - [One Death Clear (Video Game)](#one-death-clear-video-game)
 
 
 # My Projects
 
-## Own repositories
+### [Campus](https://github.com/BinL233/campus)
 
-### 1. BinLTools
+A iOS map App for searching campus buildings and navigating. It also integrates many easy-to-use features. The project follows the MVVM structure.
+
+To see the repository, please check [this link](https://github.com/BinL233/campus)
+
+1. Tech
+    - Frontend: SwiftUI + UIKit + MapKit
+    - Backend: Swift
+    - Configuration: Json
+
+2. Features
+    - Decode Json for configuration and encode back for persistence.
+    - A map of campus centered on the center of campus and showing most of central campus. 
+    - It shows the users' current location. Users can found the building annotations near them.
+    - A list of buildings which user can select and favorite. Also, the filter function allows users to filter and sort the list in a variety of ways.
+    - Provide detailed information about each building, including name, when it was built, photos.
+    - The navigation function guides the user to the corresponding building or any destinations he wants to go.
+
+
+### [CPU Organization and Design](https://github.com/BinL233/Computer-Organization-and-Design)
+This project implements 5 stages: 
+Instruction Fetch, Instruction Decode, Instruction Execute, Memory of the pipelined CPU 
+using the Xilinx design package for FPGAs.
+
+To see the repository, please check [this link](https://github.com/BinL233/Computer-Organization-and-Design)
+
+1. Tech
+   - Software: Vivado
+   - Language: Verilog
+2. Features
+   - Pipelining
+   - Circuits of the Instruction Fetch Stage
+   - Circuits of the Instruction Decode Stage
+   - Circuits of the Execution Stage
+   - Circuits of the Memory Access Stage
+   - Circuits of the Write Back Stage
+
+### Cage
+
+This is a Research project. Initiated by Dr. Jiecong Lin of Harvard University, I joined his team and began research and development.
+
+This project reduces the time complexity of analyzing ChIP-nexus data by constructing efficient and accurate models through Deep Learning techniques.
+
+1. Tech
+    - Machine Learning Framework: pyTorch
+    - Library: pyBigWig, numpy, pandas, tqdm, sklearn, json
+
+2. Features
+    - Data Preprocessing: 
+        - Construct an extractor for FASTA files, primarily for extracting and processing DNA sequences information to ensure that their format and content meet the requirements of the model inputs.
+        - Build a system to read the .bed file and extract peaks from it, then map these peaks to the corresponding signal intensity index in the .bw files.
+    - Fit: 
+        - Data Loading and Transfer to GPU: Loads data from the training set and ensures they are on the GPU.
+        - Model Preparation: Clears the optimizer state and puts the model in training mode.
+        - Forward Pass: Runs the model to get predictions, applies the softmax function to the predictions, and then computes the loss.
+        - Backward Pass and Update: Computes the gradients of the loss and performs a step of gradient descent.
+    - Losses:
+        - A MSE loss function.
+        - A multinomial negative log-likelihood loss function.
+    - Predict:
+        - Construct a trained model to analyze new DNA sequences and predicts the distribution of the signal intensity of protein-DNA interactions across the genome
+
+
+### [Thread scheduler](https://github.com/BinL233/Thread-scheduler)
+
+This repository contains code for emulation of a single CPU with 
+the Shortest Remaining Time First scheduling policy 
+and two IO Devices based thread scheduler.
+
+To see the repository, please check [this link](https://github.com/BinL233/Thread-scheduler).
+
+1. Languages
+   - C language
+   - Makefile
+
+2. Features
+   - Implemented and parsed various mechanisms for virtual memory to 
+   physical memory to page mapping and page scheduling algorithms (FIFO, LRU, CLOCK).
+   - Implemented multi-process, CPU/IO multi-threading 
+   (spin locks, mutex locks, and thread scheduling algorithms (FCFS, SRJF)).
+   - implemented TLB mechanism to determine the 
+   physical address of the memory request at the time of the TLB hit.
+
+
+### [Pentominoes](https://github.com/BinL233/pentominoes)
+
+A Pentominoes Game App for iOS. The project follows the MVVM structure.
+
+To seel the repository, please check [this link](https://github.com/BinL233/pentominoes)
+
+1. Tech
+    - Frontend: SwiftUI
+    - Backend: Swift
+    - Configuration: Json
+
+2. Features
+    - All objects built by Shape protocal. Objects constructed by this method do not have pixel problems because they are vector graphics.
+    - Build 14*14 Grid, 12 Pieces with differnt shapes.
+    - Gesture functions on Pieces:
+        - Drag Gesture: Allows the user to place the Piece into the corresponding grid.
+        - Tap Gesture: Allows the user to rotate the Piece 90 degrees.
+        - Long Tap Gesture: Allows the user to filp the Piece.
+    - Reset: Returns all the pieces to their original positions.
+    - Solve: Solve the current puzzle, which means put all pieces into the correct grid with correct direction automatically.
+    - Decode Json to get persistence.
+
+### [Pokedex](https://github.com/BinL233/pokedex)
+
+A Pokémon info graphic for iOS. The project follows the MVVM structure.
+
+To see the repository, please check [this link](https://github.com/BinL233/pokedex)
+
+1. Tech
+    - Frontend: SwiftUI
+    - Backend: Swift
+    - Configuration: Json
+
+2. Features
+    - Decode Json for configuration.
+    - Store user data by using AppStorage.
+    - Adapting light and dark mode.
+    - A list of Pokémon displays name, number and thumbnail size image.
+    - Selecting a row bring user to the detail view.
+    - Detail view contains name, image, type, weekness, prevEvolution, nextEvolution, height and weight.
+    - User can select which Pokémon has been captured.
+    - HomeView to show captured Pokémon.
+    - Filters by Pokémon type.
+
+
+### [BinLTools](https://github.com/BinL233/BinLTools_Gin)
 
 Gin Framework-based project.
 Used for small features and articles created by the author.
 
-To see the repository, please click [this link](https://github.com/BinL233/BinLTools_Gin).
+To see the repository, please check [this link](https://github.com/BinL233/BinLTools_Gin).
 
 Website: http://binltools.fun
 
@@ -47,55 +180,88 @@ Website: http://binltools.fun
         - Support Binary, Octal, Decimal and Hexadecimal conversions.
     - Download handler
 
-### 2. CPU Organization and Design
-This project implements 5 stages: 
-Instruction Fetch, Instruction Decode, Instruction Execute, Memory of the pipelined CPU 
-using the Xilinx design package for FPGAs.
 
-To see the repository, please click [this link](https://github.com/BinL233/Computer-Organization-and-Design)
+### [LionSpell](https://github.com/BinL233/lion-spell)
+
+A Word Scramble Game for iOS. The project follows the MVVM structure.
+
+To see the repository, please check [this link](https://github.com/BinL233/lion-spell)
 
 1. Tech
-   - Software: Vivado
-   - Language: Verilog
-2. Features:
-   - Pipelining
-   - Circuits of the Instruction Fetch Stage
-   - Circuits of the Instruction Decode Stage
-   - Circuits of the Execution Stage
-   - Circuits of the Memory Access Stage
-   - Circuits of the Write Back Stage
-
-
-### 3. Thread scheduler
-
-This repository contains code for emulation of a single CPU with 
-the Shortest Remaining Time First scheduling policy 
-and two IO Devices based thread scheduler.
-
-To see the repository, please click [this link](https://github.com/BinL233/Thread-scheduler).
-
-1. Languages
-   - C language
-   - Makefile
+    - Frontend: SwiftUI
+    - Backend: Swift
 
 2. Features
-   - Implemented and parsed various mechanisms for virtual memory to 
-   physical memory to page mapping and page scheduling algorithms (FIFO, LRU, CLOCK).
-   - Implemented multi-process, CPU/IO multi-threading 
-   (spin locks, mutex locks, and thread scheduling algorithms (FCFS, SRJF)).
-   - implemented TLB mechanism to determine the 
-   physical address of the memory request at the time of the TLB hit.
+    - Support switching between English, French, German, and Italian vocabulary modes.
+    - Randomly choose scrambled letters from the thesaurus, but at the same time make sure that you can definitely form words.
+    - A scorer to calculate and display the current score.
+    - Users can choose the level of difficulty, which determines the length of the word as well as the number of buttons (buttons are used to select the letter)
+    - The hint interface displays how many words of each length can be solved in the current puzzle.
 
-### 4. One Death Clear
+### [Kueue](https://github.com/kubernetes-sigs/kueue)
+
+Kueue is a kubernetes-native system that manages quotas and how jobs consume them. 
+Kueue decides when a job should wait, when a job should be admitted to start (as in pods can be created) 
+and when a job should be preempted (as in active pods should be deleted).
+
+To see the repository, please check [this link](https://github.com/kubernetes-sigs/kueue).
+
+**My contributions:**
+   - Pull requests: 8
+   - Code: 132 lines
+   - Issues: 1
+
+### [Course Scheduler](https://github.com/BinL233/CourseScheduler)
+
+Simulated Course Scheduling application.
+
+To see the repository, please check [this link](https://github.com/BinL233/CourseScheduler)
+
+1. Tech
+    - Frontend: Java GUI, Swing
+    - Backend: Java
+    - Database: Derby
+
+2. Features
+    - GUI interface for Student part and Admin part.
+    - Linking databases and applications through APIs.
+    - Create different authorizations for students and admin users.
+    - Features for student: Drop Course, Add Course and Display Courses List.
+    - Features for Admin Users: Create Semester, Create Course, Add Student, Drop Student, Display Students List and Display Courses List.
+
+
+### [Drawing Application](https://github.com/BinL233/drawing-application)
+
+This is Java 2D Drawing Application.
+
+To see the repository, please check [this link](https://github.com/BinL233/drawing-application)
+
+1. Tech
+    - Frontend: Java GUI, Swing
+    - Backend: Java
+2. Feature
+    - Store vector diagrams based on the coordinates of the user's drawing.
+    - A combo box for selecting the shape to draw, a line, oval, or rectangle.
+    - Two JButtons that each show a JColorChooser dialog to allow the user to choose the first and second color in the gradient.
+    - Undo button: undo the last shape drawn.
+    - Clear button: clear all shapes from the drawing.
+    - Checkboxes:
+        - Specifies if the shape should be filled or unfilled.
+        - Specify whether to paint using a gradient.
+        - Specifying whether to draw a dashed or solid line.
+    - JSpinner: Modify Stroke width, Stroke dash length.
+    - A status bar JLabel at the bottom of the frame that displays the current location of the mouse on the draw panel.
+
+### [One Death Clear](http://binltools.fun/download/No_Death_Clear_0.8.3_Project.zip) (Video Game)
 
 This is a 2D RPG game. 
 Control the character to fight against monsters 
 and defeat the boss at the end to clear the game.
 The most important thing is that if you die you need to start over!
 
-To download this game, please click [this link](/download/No_Death_Clear_0.8.3.exe).
+To download this game, please check [this link](http://binltools.fun/download/No_Death_Clear_0.8.3.exe).
 
-To download the repository, please click [this link](/download/No_Death_Clear_0.8.3_Project.zip)
+To download the repository, please check [this link](http://binltools.fun/download/No_Death_Clear_0.8.3_Project.zip)
 
 1. Tech
    - Game Engine: Godot
@@ -106,18 +272,3 @@ To download the repository, please click [this link](/download/No_Death_Clear_0.
    - Physical collision
    - Health system
    - Buff mechanism
-
-## Open Source projects contributions
-
-### 1. Kueue
-
-Kueue is a kubernetes-native system that manages quotas and how jobs consume them. 
-Kueue decides when a job should wait, when a job should be admitted to start (as in pods can be created) 
-and when a job should be preempted (as in active pods should be deleted).
-
-To see the repository, please click [this link](https://github.com/kubernetes-sigs/kueue).
-
-**My contributions:**
-   - Pull requests: 8
-   - Code: 132 lines
-   - Issues: 1
