@@ -45,6 +45,8 @@ This project reduces the time complexity of analyzing ChIP-nexus data by constru
 
 Revive is a Focus App for iOS, based on taking care of endangered or extinct species. In Revive, you can take care of a species from 0 to 1, starting with an egg. For your  species to thrive, you need to do anything in a focused way-----such as studying, working, or other activities, which is the core of Revive.
 
+To see the repository, please check [this link](https://github.com/BinL233/Revive)
+
 1. Tech
    - Frontend: SwiftUI
    - Backend: Swift, CloudKit
