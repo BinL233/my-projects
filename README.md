@@ -2,6 +2,7 @@
     - [Cage](#cage)
     - [Revive](#revive)
     - [Campus](#campus)
+    - [One Death Clear (Video Game)](#one-death-clear-video-game)
     - [CPU Organization and Design](#cpu-organization-and-design)
     - [Thread scheduler](#thread-scheduler)
     - [Pentominoes](#pentominoes)
@@ -11,7 +12,6 @@
     - [Kueue](#kueue)
     - [Course Scheduler](#course-scheduler)
     - [Drawing Application](#drawing-application)
-    - [One Death Clear (Video Game)](#one-death-clear-video-game)
 
 
 # My Projects
@@ -108,6 +108,27 @@ To see the repository, please check [this link](https://github.com/BinL233/campu
     - A list of buildings which user can select and favorite. Also, the filter function allows users to filter and sort the list in a variety of ways.
     - Provide detailed information about each building, including name, built time, photos.
     - The navigation function guides the user to the corresponding building or any destination he wants to go.
+  
+## [One Death Clear](http://binltools.fun/download/No_Death_Clear_0.8.3_Project.zip) (Video Game)
+
+This is a 2D RPG game. 
+Control the character to fight against monsters 
+and defeat the boss at the end to clear the game.
+The most important thing is that if you die you need to start over!
+
+To download this game, please check [this link](http://binltools.fun/download/No_Death_Clear_0.8.3.exe).
+
+To download the repository, please check [this link](http://binltools.fun/download/No_Death_Clear_0.8.3_Project.zip)
+
+1. Tech
+   - Game Engine: Godot
+   - UI and Object Painting: Aseprite & PhotoShop
+
+2. Features
+   - Character movement acceleration system
+   - Physical collision
+   - Health system
+   - Buff mechanism
 
 
 ## [CPU Organization and Design](https://github.com/BinL233/Computer-Organization-and-Design)
@@ -172,7 +193,7 @@ To seel the repository, please check [this link](https://github.com/BinL233/pent
     - Solve: Solve the current puzzle, which means putting all pieces into the correct grid with the correct direction automatically.
     - Decode Json to get persistence.
 
-### [Pokedex](https://github.com/BinL233/pokedex)
+## [Pokedex](https://github.com/BinL233/pokedex)
 
 A Pokémon infographic for iOS. The project follows the MVVM structure.
 
@@ -248,7 +269,7 @@ To see the repository, please check [this link](https://github.com/BinL233/lion-
     - Users can choose the level of difficulty, which determines the length of the word as well as the number of buttons (buttons are used to select the letter)
     - The hint interface displays how many words of each length can be solved in the current puzzle.
 
-### [Kueue](https://github.com/kubernetes-sigs/kueue)
+## [Kueue](https://github.com/kubernetes-sigs/kueue)
 
 Kueue is a kubernetes-native system that manages quotas and how jobs consume them. 
 Kueue decides when a job should wait, when a job should be admitted to start (as in pods can be created) 
@@ -301,24 +322,3 @@ To see the repository, please check [this link](https://github.com/BinL233/drawi
         - Specifying whether to draw a dashed or solid line.
     - JSpinner: Modify Stroke width, Stroke dash length.
     - A status bar JLabel at the bottom of the frame that displays the current location of the mouse on the draw panel.
-
-## [One Death Clear](http://binltools.fun/download/No_Death_Clear_0.8.3_Project.zip) (Video Game)
-
-This is a 2D RPG game. 
-Control the character to fight against monsters 
-and defeat the boss at the end to clear the game.
-The most important thing is that if you die you need to start over!
-
-To download this game, please check [this link](http://binltools.fun/download/No_Death_Clear_0.8.3.exe).
-
-To download the repository, please check [this link](http://binltools.fun/download/No_Death_Clear_0.8.3_Project.zip)
-
-1. Tech
-   - Game Engine: Godot
-   - UI and Object Painting: Aseprite & PhotoShop
-
-2. Features
-   - Character movement acceleration system
-   - Physical collision
-   - Health system
-   - Buff mechanism
