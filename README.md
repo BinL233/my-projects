@@ -1,4 +1,5 @@
 - [My Projects](#my-projects)
+    - [Revive](#revive)
     - [Campus](#campus)
     - [CPU Organization and Design](#cpu-organization-and-design)
     - [Cage](#cage)
@@ -15,9 +16,58 @@
 
 # My Projects
 
+### [Revive](https://github.com/BinL233/Revive)
+
+Revive is a Focus App for iOS, based on taking care of endangered or extinct species. In Revive, you can take care of a species from 0 to 1, starting with an egg. For your  species to thrive, you need to do anything in a focused way-----such as studying, working, or other activities, which is the core of Revive.
+
+1. Tech
+   - Frontend: SwiftUI
+   - Backend: Swift, CloudKit
+2. Features
+    - Focus
+        1. The focus mechanism detects if the user is leaving the application. This prevents the user from doing other things. 
+        2. For the timer, users are free to set the time they want to focus on.
+        3. There are three kinds of focus approaches: hatching, training and exploring. 
+            - Hatching: 
+                - Hatching eggs through focus. 
+                - Eggs are randomly assigned to the user, and eggs from different types of Secipes take different amounts of time to hatch.
+                - Users can choose their own focus time, which is used to reduce the amount of time remaining for the egg to hatch. (In other words, egg hatching doesn't need to be done all at once, it can be done by multiple Focuses)
+            - Training: 
+                - Training users' own species through focus. 
+                - The longer users focus, the higher EXP users' species gain.
+            - Exploring: 
+                - Exploring through focus. 
+                - Users can select a time period for the focus. The exact time is random in the selected time period. 
+                - The longer users focus, the higher probability of getting rare items.
+    - Backyard
+        1. Users can check their species in the Species List. Species List contains information about each species.
+            - Name
+            - Date of birth
+            - Level
+            - Sex
+        2. Users can take care of their species by feeding them. The items gains by exploring.
+    - Analysis
+        1. Users can view the history of focus records as well as time distribution graphs.
+        2. Users can categorize the view by action and time span.
+    - Cloud Sync
+        1. Cloud Sync will automatically store user information. 
+        2. The users' data will be stored in their iCloud.
+    - Setting
+      1. Focus
+        -  Keep Screen On
+          - Users can set it on if you want.
+      2. Notification
+        - Notification
+            - Notification switch helps users turn on/off the notification.
+        - Reminder
+            - Reminder will remind users to start focusing by sending the notification.
+            - Users can set the reminder time in this field.
+    - Notification
+        - If the time set by users is reached, the user will be alerted via notification.
+
 ### [Campus](https://github.com/BinL233/campus)
 
-A iOS map App for searching campus buildings and navigating. It also integrates many easy-to-use features. The project follows the MVVM structure.
+An iOS map App for searching campus buildings and navigating. It also integrates many easy-to-use features. The project follows the MVVM structure.
 
 To see the repository, please check [this link](https://github.com/BinL233/campus)
 
@@ -28,11 +78,11 @@ To see the repository, please check [this link](https://github.com/BinL233/campu
 
 2. Features
     - Decode Json for configuration and encode back for persistence.
-    - A map of campus centered on the center of campus and showing most of central campus. 
-    - It shows the users' current location. Users can found the building annotations near them.
+    - A map of campus centered on the center of campus and showing most of the central campus. 
+    - It shows the users' current location. Users can find the building annotations near them.
     - A list of buildings which user can select and favorite. Also, the filter function allows users to filter and sort the list in a variety of ways.
-    - Provide detailed information about each building, including name, when it was built, photos.
-    - The navigation function guides the user to the corresponding building or any destinations he wants to go.
+    - Provide detailed information about each building, including name, built time, photos.
+    - The navigation function guides the user to the corresponding building or any destination he wants to go.
 
 
 ### [CPU Organization and Design](https://github.com/BinL233/Computer-Organization-and-Design)
@@ -65,7 +115,7 @@ This project reduces the time complexity of analyzing ChIP-nexus data by constru
 
 2. Features
     - Data Preprocessing: 
-        - Construct an extractor for FASTA files, primarily for extracting and processing DNA sequences information to ensure that their format and content meet the requirements of the model inputs.
+        - Construct an extractor for FASTA files, primarily for extracting and processing DNA sequence information to ensure that their format and content meet the requirements of the model inputs.
         - Build a system to read the .bed file and extract peaks from it, then map these peaks to the corresponding signal intensity index in the .bw files.
     - Fit: 
         - Data Loading and Transfer to GPU: Loads data from the training set and ensures they are on the GPU.
@@ -112,19 +162,19 @@ To seel the repository, please check [this link](https://github.com/BinL233/pent
     - Configuration: Json
 
 2. Features
-    - All objects built by Shape protocal. Objects constructed by this method do not have pixel problems because they are vector graphics.
-    - Build 14*14 Grid, 12 Pieces with differnt shapes.
+    - All objects built by Shape protocol. Objects constructed by this method do not have pixel problems because they are vector graphics.
+    - Build 14*14 Grid, 12 Pieces with different shapes.
     - Gesture functions on Pieces:
         - Drag Gesture: Allows the user to place the Piece into the corresponding grid.
         - Tap Gesture: Allows the user to rotate the Piece 90 degrees.
-        - Long Tap Gesture: Allows the user to filp the Piece.
+        - Long Tap Gesture: Allows the user to flip the Piece.
     - Reset: Returns all the pieces to their original positions.
-    - Solve: Solve the current puzzle, which means put all pieces into the correct grid with correct direction automatically.
+    - Solve: Solve the current puzzle, which means putting all pieces into the correct grid with the correct direction automatically.
     - Decode Json to get persistence.
 
 ### [Pokedex](https://github.com/BinL233/pokedex)
 
-A Pokémon info graphic for iOS. The project follows the MVVM structure.
+A Pokémon infographic for iOS. The project follows the MVVM structure.
 
 To see the repository, please check [this link](https://github.com/BinL233/pokedex)
 
@@ -138,8 +188,8 @@ To see the repository, please check [this link](https://github.com/BinL233/poked
     - Store user data by using AppStorage.
     - Adapting light and dark mode.
     - A list of Pokémon displays name, number and thumbnail size image.
-    - Selecting a row bring user to the detail view.
-    - Detail view contains name, image, type, weekness, prevEvolution, nextEvolution, height and weight.
+    - Selecting a row brings users to the detail view.
+    - Detail view contains name, image, type, weakness, prevEvolution, nextEvolution, height and weight.
     - User can select which Pokémon has been captured.
     - HomeView to show captured Pokémon.
     - Filters by Pokémon type.
@@ -161,7 +211,7 @@ Website: http://binltools.fun
     - Database: Mysql
 
 2. Features
-    - Login/Registation
+    - Login/Regisrtation
         - Password encryption
         - JWT web tokens for users
         - Prevent duplicate logins/registrations
@@ -173,7 +223,7 @@ Website: http://binltools.fun
         - Developed based on [l2d](https://github.com/UsernameFull/l2d)
         - Model adaptation
         - Website adaptation
-        - Window mousemove tracking
+        - Window mouse move tracking
         - Thanks for the L2D model made by [拉莫斯的壳](https://space.bilibili.com/6769942/?spm_id_from=333.999.0.0) !
     - Digit Converter
         - Fast conversion of digits
