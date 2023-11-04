@@ -1,8 +1,8 @@
 - [My Projects](#my-projects)
+    - [Cage](#cage)
     - [Revive](#revive)
     - [Campus](#campus)
     - [CPU Organization and Design](#cpu-organization-and-design)
-    - [Cage](#cage)
     - [Thread scheduler](#thread-scheduler)
     - [Pentominoes](#pentominoes)
     - [Pokedex](#pokedex)
@@ -16,7 +16,32 @@
 
 # My Projects
 
-### [Revive](https://github.com/BinL233/Revive)
+## Cage
+
+This is a Research project. Initiated by Dr. Jiecong Lin of Harvard University, I joined his team and began research and development.
+
+This project reduces the time complexity of analyzing ChIP-nexus data by constructing efficient and accurate models through Deep Learning techniques.
+
+1. Tech
+    - Machine Learning Framework: pyTorch
+    - Library: pyBigWig, numpy, pandas, tqdm, sklearn, json
+
+2. Features
+    - Data Preprocessing: 
+        - Construct an extractor for FASTA files, primarily for extracting and processing DNA sequence information to ensure that their format and content meet the requirements of the model inputs.
+        - Build a system to read the .bed file and extract peaks from it, then map these peaks to the corresponding signal intensity index in the .bw files.
+    - Fit: 
+        - Data Loading and Transfer to GPU: Loads data from the training set and ensures they are on the GPU.
+        - Model Preparation: Clears the optimizer state and puts the model in training mode.
+        - Forward Pass: Runs the model to get predictions, applies the softmax function to the predictions, and then computes the loss.
+        - Backward Pass and Update: Computes the gradients of the loss and performs a step of gradient descent.
+    - Losses:
+        - A MSE loss function.
+        - A multinomial negative log-likelihood loss function.
+    - Predict:
+        - Construct a trained model to analyze new DNA sequences and predicts the distribution of the signal intensity of protein-DNA interactions across the genome
+
+## [Revive](https://github.com/BinL233/Revive)
 
 Revive is a Focus App for iOS, based on taking care of endangered or extinct species. In Revive, you can take care of a species from 0 to 1, starting with an egg. For your  species to thrive, you need to do anything in a focused way-----such as studying, working, or other activities, which is the core of Revive.
 
@@ -65,7 +90,7 @@ Revive is a Focus App for iOS, based on taking care of endangered or extinct spe
     - Notification
         - If the time set by users is reached, the user will be alerted via notification.
 
-### [Campus](https://github.com/BinL233/campus)
+## [Campus](https://github.com/BinL233/campus)
 
 An iOS map App for searching campus buildings and navigating. It also integrates many easy-to-use features. The project follows the MVVM structure.
 
@@ -85,7 +110,7 @@ To see the repository, please check [this link](https://github.com/BinL233/campu
     - The navigation function guides the user to the corresponding building or any destination he wants to go.
 
 
-### [CPU Organization and Design](https://github.com/BinL233/Computer-Organization-and-Design)
+## [CPU Organization and Design](https://github.com/BinL233/Computer-Organization-and-Design)
 This project implements 5 stages: 
 Instruction Fetch, Instruction Decode, Instruction Execute, Memory of the pipelined CPU 
 using the Xilinx design package for FPGAs.
@@ -103,33 +128,8 @@ To see the repository, please check [this link](https://github.com/BinL233/Compu
    - Circuits of the Memory Access Stage
    - Circuits of the Write Back Stage
 
-### Cage
 
-This is a Research project. Initiated by Dr. Jiecong Lin of Harvard University, I joined his team and began research and development.
-
-This project reduces the time complexity of analyzing ChIP-nexus data by constructing efficient and accurate models through Deep Learning techniques.
-
-1. Tech
-    - Machine Learning Framework: pyTorch
-    - Library: pyBigWig, numpy, pandas, tqdm, sklearn, json
-
-2. Features
-    - Data Preprocessing: 
-        - Construct an extractor for FASTA files, primarily for extracting and processing DNA sequence information to ensure that their format and content meet the requirements of the model inputs.
-        - Build a system to read the .bed file and extract peaks from it, then map these peaks to the corresponding signal intensity index in the .bw files.
-    - Fit: 
-        - Data Loading and Transfer to GPU: Loads data from the training set and ensures they are on the GPU.
-        - Model Preparation: Clears the optimizer state and puts the model in training mode.
-        - Forward Pass: Runs the model to get predictions, applies the softmax function to the predictions, and then computes the loss.
-        - Backward Pass and Update: Computes the gradients of the loss and performs a step of gradient descent.
-    - Losses:
-        - A MSE loss function.
-        - A multinomial negative log-likelihood loss function.
-    - Predict:
-        - Construct a trained model to analyze new DNA sequences and predicts the distribution of the signal intensity of protein-DNA interactions across the genome
-
-
-### [Thread scheduler](https://github.com/BinL233/Thread-scheduler)
+## [Thread scheduler](https://github.com/BinL233/Thread-scheduler)
 
 This repository contains code for emulation of a single CPU with 
 the Shortest Remaining Time First scheduling policy 
@@ -150,7 +150,7 @@ To see the repository, please check [this link](https://github.com/BinL233/Threa
    physical address of the memory request at the time of the TLB hit.
 
 
-### [Pentominoes](https://github.com/BinL233/pentominoes)
+## [Pentominoes](https://github.com/BinL233/pentominoes)
 
 A Pentominoes Game App for iOS. The project follows the MVVM structure.
 
@@ -195,7 +195,7 @@ To see the repository, please check [this link](https://github.com/BinL233/poked
     - Filters by Pokémon type.
 
 
-### [BinLTools](https://github.com/BinL233/BinLTools_Gin)
+## [BinLTools](https://github.com/BinL233/BinLTools_Gin)
 
 Gin Framework-based project.
 Used for small features and articles created by the author.
@@ -231,7 +231,7 @@ Website: http://binltools.fun
     - Download handler
 
 
-### [LionSpell](https://github.com/BinL233/lion-spell)
+## [LionSpell](https://github.com/BinL233/lion-spell)
 
 A Word Scramble Game for iOS. The project follows the MVVM structure.
 
@@ -261,7 +261,7 @@ To see the repository, please check [this link](https://github.com/kubernetes-si
    - Code: 132 lines
    - Issues: 1
 
-### [Course Scheduler](https://github.com/BinL233/CourseScheduler)
+## [Course Scheduler](https://github.com/BinL233/CourseScheduler)
 
 Simulated Course Scheduling application.
 
@@ -280,7 +280,7 @@ To see the repository, please check [this link](https://github.com/BinL233/Cours
     - Features for Admin Users: Create Semester, Create Course, Add Student, Drop Student, Display Students List and Display Courses List.
 
 
-### [Drawing Application](https://github.com/BinL233/drawing-application)
+## [Drawing Application](https://github.com/BinL233/drawing-application)
 
 This is Java 2D Drawing Application.
 
@@ -302,7 +302,7 @@ To see the repository, please check [this link](https://github.com/BinL233/drawi
     - JSpinner: Modify Stroke width, Stroke dash length.
     - A status bar JLabel at the bottom of the frame that displays the current location of the mouse on the draw panel.
 
-### [One Death Clear](http://binltools.fun/download/No_Death_Clear_0.8.3_Project.zip) (Video Game)
+## [One Death Clear](http://binltools.fun/download/No_Death_Clear_0.8.3_Project.zip) (Video Game)
 
 This is a 2D RPG game. 
 Control the character to fight against monsters 
