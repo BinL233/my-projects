@@ -50,6 +50,7 @@ To see the repository, please check [this link](https://github.com/BinL233/Reviv
 1. Tech
    - Frontend: SwiftUI
    - Backend: Swift, CloudKit
+   - Database: CoreData
 2. Features
     - Focus
         1. The focus mechanism detects if the user is leaving the application. This prevents the user from doing other things. 
