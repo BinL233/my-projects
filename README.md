@@ -33,8 +33,8 @@ This project reduces the time complexity of analyzing ChIP-nexus data by constru
     - Fit: 
         - Data Loading and Transfer to GPU: Loads data from the training set and ensures they are on the GPU.
         - Model Preparation: Clears the optimizer state and puts the model in training mode.
-        - Forward Pass: Runs the model to get predictions, applies the softmax function to the predictions, and then computes the loss.
-        - Backward Pass and Update: Computes the gradients of the loss and performs a step of gradient descent.
+        - Forward Propagation: Runs the model to get predictions, applies the softmax function to the predictions, and then computes the loss.
+        - Backward Propagation and Update: Computes the gradients of the loss and performs a step of gradient descent.
     - Losses:
         - A MSE loss function.
         - A multinomial negative log-likelihood loss function.
