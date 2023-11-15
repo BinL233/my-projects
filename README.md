@@ -16,6 +16,8 @@
 
 # My Projects
 
+### For finding more interesting content, please check out my [personal page](http://binltools.fun/about_me)!
+
 ## Cage
 
 This is a Research project. Initiated by Dr. Jiecong Lin of Harvard University, I joined his team and began research and development.
