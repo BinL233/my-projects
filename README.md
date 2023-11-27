@@ -174,14 +174,14 @@ To see the repository, please check [this link](https://github.com/BinL233/Gramm
     - Type: Represents the data type in declarations: 'int'|'float'|'char'.
 
 2. Grammar
-    Program -> StatementList
-    StatementList -> Statement StatementList | Statement
-    Statement -> Declaration | Assignment | Expression
-    Declaration -> Type VARIABLE ASSIGN Expression SEMECOLON | Type VARIABLE SEMICOLON
-    Type -> 'int'|'float'|'char'
-    Assignment -> VARIABLE ASSIGN Expression SEMICOLON
-    Expression -> Expression OPERATOR Term | Term
-    Term -> INTEGER | FLOAT | CHAR | VARIABLE | (Expression)
+    - Program -> StatementList
+    - StatementList -> Statement StatementList | Statement
+    - Statement -> Declaration | Assignment | Expression
+    - Declaration -> Type VARIABLE ASSIGN Expression SEMECOLON | Type VARIABLE SEMICOLON
+    - Type -> 'int'|'float'|'char'
+    - Assignment -> VARIABLE ASSIGN Expression SEMICOLON
+    - Expression -> Expression OPERATOR Term | Term
+    - Term -> INTEGER | FLOAT | CHAR | VARIABLE | (Expression)
 
 
 
