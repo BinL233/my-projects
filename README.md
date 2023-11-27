@@ -1,17 +1,19 @@
 - [My Projects](#my-projects)
-    - [Cage](#cage)
-    - [Revive](#revive)
-    - [Campus](#campus)
-    - [One Death Clear (Video Game)](#one-death-clear-video-game)
-    - [CPU Organization and Design](#cpu-organization-and-design)
-    - [Thread scheduler](#thread-scheduler)
-    - [Pentominoes](#pentominoes)
-    - [Pokedex](#pokedex)
-    - [BinLTools](#binltools)
-    - [LionSpell](#lionspell)
-    - [Kueue](#kueue)
-    - [Course Scheduler](#course-scheduler)
-    - [Drawing Application](#drawing-application)
+    - [For finding more interesting content, please check out my personal page!](#for-finding-more-interesting-content-please-check-out-my-personal-page)
+  - [Cage](#cage)
+  - [Revive](#revive)
+  - [Campus](#campus)
+  - [One Death Clear (Video Game)](#one-death-clear-video-game)
+  - [CPU Organization and Design](#cpu-organization-and-design)
+  - [Grammar Parser](#grammar-parser)
+  - [Thread scheduler](#thread-scheduler)
+  - [Pentominoes](#pentominoes)
+  - [Pokedex](#pokedex)
+  - [BinLTools](#binltools)
+  - [LionSpell](#lionspell)
+  - [Kueue](#kueue)
+  - [Course Scheduler](#course-scheduler)
+  - [Drawing Application](#drawing-application)
 
 
 # My Projects
@@ -155,6 +157,34 @@ To see the repository, please check [this link](https://github.com/BinL233/Compu
    - Circuits of the Write Back Stage
 
 
+## Grammar Parser
+
+To see the repository, please check [this link](https://github.com/BinL233/GrammarParser)
+
+**Garmmar**
+1. Tokens
+    - VARIABLE: Represents variable identifiers and consists of alphabetic characters.
+    - INTEGER: Represents interger literals.
+    - FLOAT: Represents floating point literals.
+    - CHAR: Represents character literals.
+    - OPERATOR: Represents arithmetic operators, specifically +, -, *, /.
+    - ASSIGN: Represents the assignment operator =.
+    - SEMECOLON: Represents the semicolon ; used to denote the end for grouping.
+    - PARENTHESIS: Represents open ( and close ) parentheses used for grouping.
+    - Type: Represents the data type in declarations: 'int'|'float'|'char'.
+
+2. Grammar
+    Program -> StatementList
+    StatementList -> Statement StatementList | Statement
+    Statement -> Declaration | Assignment | Expression
+    Declaration -> Type VARIABLE ASSIGN Expression SEMECOLON | Type VARIABLE SEMICOLON
+    Type -> 'int'|'float'|'char'
+    Assignment -> VARIABLE ASSIGN Expression SEMICOLON
+    Expression -> Expression OPERATOR Term | Term
+    Term -> INTEGER | FLOAT | CHAR | VARIABLE | (Expression)
+
+
+
 ## [Thread scheduler](https://github.com/BinL233/Thread-scheduler)
 
 This repository contains code for emulation of a single CPU with 
@@ -220,7 +250,6 @@ To see the repository, please check [this link](https://github.com/BinL233/poked
     - HomeView to show captured Pokémon.
     - Filters by Pokémon type.
 
-
 ## [BinLTools](https://github.com/BinL233/BinLTools_Gin)
 
 Gin Framework-based project.
@@ -255,7 +284,6 @@ Website: http://binltools.fun
         - Fast conversion of digits
         - Support Binary, Octal, Decimal and Hexadecimal conversions.
     - Download handler
-
 
 ## [LionSpell](https://github.com/BinL233/lion-spell)
 
@@ -304,7 +332,6 @@ To see the repository, please check [this link](https://github.com/BinL233/Cours
     - Create different authorizations for students and admin users.
     - Features for student: Drop Course, Add Course and Display Courses List.
     - Features for Admin Users: Create Semester, Create Course, Add Student, Drop Student, Display Students List and Display Courses List.
-
 
 ## [Drawing Application](https://github.com/BinL233/drawing-application)
 
